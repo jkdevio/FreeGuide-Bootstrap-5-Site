@@ -30,6 +30,14 @@ body{
     color: #fff;
 }
 
+.carousel-caption {
+        position: absolute;
+        bottom: 50%; /* Center vertically */
+        left: 50%;
+        transform: translate(-50%, 50%); /* Center horizontally */
+        text-align: center;
+        }
+
 .carousel-caption p{
     width: 60%;
     margin: auto;
@@ -207,6 +215,14 @@ background-color: rgb(9, 9, 9); /* Custom dark color */
 
     }
 
+    .carousel-caption {
+        position: absolute;
+        bottom: 50%; /* Center vertically */
+        left: 50%;
+        transform: translate(-50%, 50%); /* Center horizontally */
+        text-align: center;
+        }
+
     .card{
         margin-bottom: 30px;
     }
@@ -227,11 +243,21 @@ background-color: rgb(9, 9, 9); /* Custom dark color */
     }
 
     .carousel-caption{
-        bottom: 250px;
+        bottom: 300px;
     }
+    
+        .carousel-caption {
+        position: absolute;
+        bottom: 50%; /* Center vertically */
+        left: 50%;
+        transform: translate(-50%, 50%); /* Center horizontally */
+        text-align: center;
+        }
+
 
     .carousel-caption h5{
-        font-size: 30px;
+        font-size: 2rem;
+        font-weight: 800;
     }
 
     .carousel-caption a{
