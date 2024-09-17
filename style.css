@@ -1,5 +1,5 @@
-*{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+* {
+    font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
 body{
@@ -16,15 +16,18 @@ body{
 }
 
 .carousel-caption{
-    bottom: 220px;
+    bottom: 250px;
     z-index: 2;
 }
 
 .carousel-caption h5{
-    font-size: 45px;
+    font-size: 70px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
 }
 
 .carousel-caption p{
@@ -43,13 +46,81 @@ body{
     left: 0;
     background: rgb(0,0,0,0.7);
     z-index: 1;
+}
+.navbar-custom {
+background-color: rgb(0,0,0,0.2); /* Custom dark color */
+        }
+.bg-custom {
+background-color: rgb(0,0,0,1); /* Custom dark color */
+        }
+        .bg-custom-2 {
+background-color: rgb(9, 9, 9); /* Custom dark color */
+        }
+        .bg-custom-3 {
+background-color: rgb(9, 9, 9); /* Custom dark color */
+        }
+        .bg-custom-2:hover{
+            background-color: rgb(7, 7, 7); /* Custom dark color */
+        }
+        
 
+.about-img img {
+        display: block; /* Removes extra space below the image */
+        width: 100%; /* Ensure the image takes up the full width of its container */
+        height: auto; /* Maintain aspect ratio of the image */
+        border-radius: 8px; /* Optional: Adds rounded corners to the image */
 }
 
+.about-img {
+    position: relative; /* Position relative to enable absolute positioning of the overlay */
+}
+
+.about-img::after {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay with 50% opacity */
+    border-radius: 8px; /* Matches image corners if rounded */
+    z-index: 1; /* Ensures the overlay sits above the image */
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.about-text h2 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem; /* Spacing below the heading */
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-text p {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Improve readability with line height */
+    margin-bottom: 1.5rem; /* Spacing below the paragraph */
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: #343a40; /* Dark button background */
+    border: none;
+    color: #fff; /* White text color */
+}
+
+.btn-dark:hover {
+    background-color: #23272b; /* Slightly darker color on hover */
+}
 .navbar-nav a{
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-brand{
@@ -97,6 +168,28 @@ body{
     box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
 
 }
+
+.card-body{
+    background-color: rgb(9, 9, 9);
+}
+
+
+.input-dark {
+    background-color: rgb(9, 9, 9); /* Dark background */
+    color: #fff; /* White text */
+    border: 1px solid #555; /* Slightly lighter border */
+  }
+  
+  .input-dark::placeholder {
+    color: #aaa; /* Light grey for placeholder text */
+  }
+
+  .input-dark:focus {
+    background-color: rgb(9, 9, 9); /* Slightly lighter on focus */
+    border-color: #fff; /* Blue border on focus */
+    color: #fff; /* Keep text white */
+    box-shadow: none; /* Remove default box-shadow */
+  }
 
 /* .team .card-body{
     font-size: 20px;
@@ -156,6 +249,9 @@ body{
 
     .card{
         margin-bottom: 30px;
+    }
+    .about-text{
+        margin-top: none;
     }
     
 }
