@@ -15,7 +15,8 @@ A modern **Bootstrap 5** website designed for gym and fitness enthusiasts. FitGu
 - **HTML5**  
 - **CSS3**  
 - **Bootstrap 5**  
-- **JavaScript**  
+- **JavaScript**
+- **Jquery**  
 
 ---
 
